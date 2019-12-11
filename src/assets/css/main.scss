@@ -1,0 +1,56 @@
+.container {
+  background-color: #fff;
+  margin: 10px;
+  margin-left: 20px;
+  width: 100%;
+  min-width: 600px;
+  min-height: 700px;
+  height: 100%;
+}
+
+.header {
+  margin-bottom: 10px;
+  height: 40px;
+
+  >* {
+    margin-right: 40px;
+  }
+
+  .el-button-group {
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.footer {
+  text-align: center;
+  margin: 5px;
+}
+
+
+.jobBorder {
+  min-width:670px;
+  div {
+    margin-bottom: 1px;
+  }
+
+  .el-button {
+    margin-bottom: 1px;
+
+  }
+
+  .el-col {
+    border: 1px solid black;
+    text-align: center;
+    height: 100px;
+  }
+
+  .el-date-picker {
+    width: 100%;
+  }
+
+  .midStyle{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
