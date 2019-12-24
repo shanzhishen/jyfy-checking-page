@@ -326,7 +326,7 @@ export default {
           var param = {
             week: w
           };
-          var fileName = "项目周报" +  w + ".docx";
+          var fileName = "项目周报" +  w + ".doc";
           common.getDownload("weekPaper/downloadSummary",param,fileName,this);
         })
         .catch(() => {
