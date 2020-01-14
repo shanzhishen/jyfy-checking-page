@@ -14,7 +14,7 @@
           :value="item.checkId"
         ></el-option>
       </el-select>
-      <!-- <span style="font-size:5px;color:red"></span> -->
+      <!-- <span class="tips"></span> -->
     </el-col>
     <el-col :span="24" class="header">
       <template>
@@ -97,6 +97,7 @@ export default {
       common.get("monthChecking/getAllScore",{checkId: this.checkedVal},callback);
     },
     confLeaderData(data) {
+      
       var local = [];
       var map = {};
       for (let i = 0; i < data.length; i++) {
@@ -107,7 +108,8 @@ export default {
             jnum: d.jnum,
             userName: d.userName,
             leaderJnum: d.leaderJnum,
-            leaderName: d.leaderName
+            leaderName: d.leaderName,
+            ord: d.ord
           };
           row[d.leaderJnum + "|basicPoints"] = d.basicPoints;
           row[d.leaderJnum + "|comPoints"] = d.comPoints;
@@ -124,6 +126,9 @@ export default {
       for (let j in map) {
         local.push(map[j]);
       }
+      local.sort(function(a,b){
+        return a.ord - b.ord
+      })
       this.leaderTableList = local;
       this.loading = false;
     },

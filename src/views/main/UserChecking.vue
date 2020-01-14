@@ -17,7 +17,7 @@
       <el-badge :value="unComplete.length" :max="30">
         <el-button size="medium" @click.native="showUnComplete">未填写</el-button>
       </el-badge>&nbsp;&nbsp;&nbsp;&nbsp;
-      <span style="font-size:5px;color:red">* 主任无需打分</span>
+      <span class="tips">* 主任无需打分</span> 
       <el-button-group>
         <el-button type="success" round @click.native="submit" :disabled="menu.cre===0">保存数据</el-button>
       </el-button-group>

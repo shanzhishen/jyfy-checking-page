@@ -8,7 +8,7 @@
         value-format="yyyyMM"
         @change="changeMonth"
       ></el-date-picker>
-      <span style="font-size:5px;color:red">* 管理：班次为平均分； 正常：班次为实际分数； 休息：不计入分数</span>
+      <span class="tips">* 管理：班次为平均分； 正常：班次为实际分数； 休息：不计入分数</span>
     </el-col>
     <el-col :span="24" class="main">
       <template>

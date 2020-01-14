@@ -28,7 +28,7 @@
         <el-button type="success" round>新增</el-button>
         <el-button type="danger" round>删除</el-button>
       </el-button-group>-->
-      <span style="font-size:5px;color:red">* 无法解析的数据以弹窗形式弹出，可以在日常数据中自行维护</span>
+      <span class="tips">* 无法解析的数据以弹窗形式弹出，可以在日常数据中自行维护</span>
     </el-col>
     <el-col :span="24" class="header">
       <template>

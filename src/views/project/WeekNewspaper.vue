@@ -50,7 +50,7 @@
         <el-row>
           <el-form :model="paperForm" :rules="rules" ref="projectForm">
             <div class="paperTitle" :class="{'titleColor': isSubmit}">项目周报【{{weekObj.monday}}—{{weekObj.sunday}}】</div>
-            <span style="font-size:5px;color:red">* 工作内容不填将不会被保存</span>
+            <span class="tips">* 工作内容不填将不会被保存</span>
             <el-form-item
               label="项目名称："
               label-width="120px"
@@ -401,7 +401,6 @@ export default {
       };
       var callback = res => {
         var data = common.handerData(res, this);
-        console.log(data);
         if(data == null){
           this.isSubmit = true;
         }else {
@@ -475,7 +474,6 @@ export default {
       };
       var callback = res => {
         var data = common.handerData(res, this);
-        console.log(data);
         this.unhandlerPapers = data;
         this.unhandlerVisible = true;
       };

@@ -38,7 +38,7 @@
       </el-select>
     </el-col>
     <el-col :span="24" class="header">
-      <span style="font-size:5px;color:red">* 如果通过excel上传的数据出现错误，建议修改excel后重新上传</span>
+      <span class="tips">* 如果通过excel上传的数据出现错误，建议修改excel后重新上传</span>
       <el-button-group>
         <el-button
           type="primary"

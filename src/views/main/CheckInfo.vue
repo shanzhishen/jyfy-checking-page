@@ -5,7 +5,7 @@
         <el-button type="success" icon="el-icon-plus" @click.native="addCheckInfoVisible=true">增加</el-button>
         <el-button type="danger" icon="el-icon-minus" @click.native="delCheckInfo">删除</el-button>
       </el-button-group>
-      <span style="font-size:5px;color:red">* 考核开始：考核所有功能开启；开始计算：关闭月查考核、员工互评功能；考核结束：关闭计算功能</span>
+      <span class="tips">* 考核开始：考核所有功能开启；开始计算：关闭月查考核、员工互评功能；考核结束：关闭计算功能</span>
     </el-col>
     <el-col :span="24" class="main">
       <template>

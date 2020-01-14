@@ -25,7 +25,7 @@
         value-format="yyyyMMddHHmmss"
         :picker-options="{firstDayOfWeek:1}"
       ></el-date-picker>
-      <span style="font-size:5px;color:red">* 上传的第一天必须是周一；最后一天建议是周日</span>
+      <span class="tips">* 上传的第一天必须是周一；最后一天建议是周日</span>
     </el-col>
     <!-- :picker-options="{firstDayOfWeek:1}" -->
     <el-col>

@@ -14,7 +14,7 @@
           :value="item.checkId"
         ></el-option>
       </el-select>
-      <span style="font-size:5px;color:red">* 应得分：不含加减分项；合计：包含加减分项</span>
+      <span class="tips">* 应得分：不含加减分项；合计：包含加减分项</span>
       <el-button-group>
         <el-button
           type="success"
